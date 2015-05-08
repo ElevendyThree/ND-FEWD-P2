@@ -120,7 +120,6 @@ a {
   background-color: #4A4A4A;
 }
 
-/* TODO: Replace with image later */
 #header {
   background-color: #484848;
   border-radius: 15px 15px 0 0;
@@ -161,6 +160,21 @@ span {
   padding: 5px;
 }
 
+#map {
+  display: block;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  /*max-width: 500px;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mapDiv {
+  height: 300px;
+  padding-bottom: 75px;
+}
+
 #letsConnect {
   text-align: center;
   border-radius: 0 0 15px 15px;
@@ -184,21 +198,6 @@ span {
   }
 }
 
-#map {
-  display: block;
-  height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#mapDiv {
-  height: 300px;
-  padding-bottom: 75px;
-}
-
 @media only screen and (min-width: 750px) {
   #skillsH3,
   .biopic {
@@ -210,27 +209,20 @@ span {
   }
 }
 
-
-
-
-
-
-
 /* HTML5 and CSS3 "Hello My name is" Sticker
-   by @girlie_mac
-
-   Thank you @futomi and @thesifter, for correcting my original markup to make it in semantic html5, and @mikeleeorg, @kevinmarks and @dmitrykharlamov for suggesting me to use hCard microformat! I maybe still doing wrong with the vCard class names and semantics...
-
+   adapted from code by @girlie_mac
 */
 
 body {
     margin: 2em;
 }
+
 article, .lable-head, .label-name {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 .vcard {
     width: 300px; height: 200px;
     background: #e00;
@@ -240,9 +232,11 @@ article, .lable-head, .label-name {
     -moz-transform: rotate(-10deg);
     transform: rotate(-10deg);
 }
+
 .vcardH1, .vcardp {
     padding: 0; margin: 0;
 }
+
 .vcardH1 {
     height: 40px;
     padding-top: 5px;
@@ -254,6 +248,7 @@ article, .lable-head, .label-name {
     font-size: 2em;
     font-weight: bold;
 }
+
 .vcardp {
     height: 25px;
     padding-top: 0;
@@ -264,6 +259,7 @@ article, .lable-head, .label-name {
     letter-spacing: 0.2em;
     font-size: 1.1em;
 }
+
 .first-name, .last-name {
     background: #fff;
     height: 70px;
@@ -272,11 +268,13 @@ article, .lable-head, .label-name {
     padding: 0;
     margin: 0;
 }
+
 .first-name {
     text-align: left;
     padding-left: 50px;
     font-size: 4em;
 }
+
 .last-name {
     text-align: right;
     padding-right: 30px;
